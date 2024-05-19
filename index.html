@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMK Login and Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" type="x-icon" href="image/logo mmk.PNG">
+</head>
+<body>
+  <div class="container">                
+    <div class="form-box">
+      <div class="signup-box">
+        <h2>Sign Up</h2>
+        <div class="textbox">
+          <input type="text" placeholder="Username" required>
+        </div>
+        <div class="textbox">
+          <input type="email" placeholder="Email" required>
+        </div>
+        <div class="textbox">
+          <input type="password" placeholder="Password" required>
+        </div>
+        <button class="btn" id="signup-btn">Sign Up</button>
+        <p class="error-msg"></p>
+      </div>
+      <div class="login-box" style="display: none;">
+        <h2>Login</h2>
+        <div class="textbox">
+          <input type="text" placeholder="Username" required>
+        </div>
+        <div class="textbox">
+          <input type="password" placeholder="Password" required>
+        </div>
+        <select class="role-select">
+          <option value="admin">Admin</option>
+          <option value="customer">Customer</option>
+          <option value="deliverystaff">Delivery Staff</option>
+        </select>
+        <button class="btn" id="login-btn">Login</button>
+        <p class="error-msg"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
